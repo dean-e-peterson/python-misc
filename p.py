@@ -56,7 +56,7 @@ openstaxAtomicWeightsTuple = (
 
         ('Sn', 118.7),
 
-        ('', 126.9),
+        ('I', 126.9),
         ('Xe', 131.3),
         ('Cs', 132.9),
         ('Ba', 137.3),
@@ -83,7 +83,7 @@ b = BookWeightsType()
 # Some atomic weights from IUPAC Periodic table 4 May 2022
 iupacAtomicWeightsTuple = (
         ('H', 1.0080),
-        ('He', 4.0026)
+        ('He', 4.0026),
         ('Li', 6.94),
         ('Be', 9.0122),
         ('B', 10.81),
