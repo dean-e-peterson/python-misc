@@ -1,11 +1,12 @@
 import collections
 
-__all__ = ('b', 'i', 'Avo', 'Avosig', 'Avofull')
+__all__ = ('b', 'i', 'Avo', 'Avosig', 'Avofull', 'Avofullsig')
 
 # Misc
 Avo = 6.022 * 10**23
 Avosig = 6.022
 Avofull = 6.02214076 * 10**23
+Avofullsig = 6.02214076
 
 # Some atomic weights from Appendix A periodic table in OpenStax Chem 2e.
 openstaxAtomicWeightsTuple = (
@@ -61,7 +62,10 @@ openstaxAtomicWeightsTuple = (
         ('Cs', 132.9),
         ('Ba', 137.3),
 
+        ('La', 138.9),
         ('Ce', 140.1),
+        ('Pr', 140.9),
+        ('Nd', 144.2),
 
         ('W', 183.8),
 
@@ -72,6 +76,10 @@ openstaxAtomicWeightsTuple = (
         ('Tl', 204.4),
         ('Pb', 207.2),
         ('Bi', 209.0),
+
+        ('Th', 232.0),
+        ('Pa', 231.0),
+        ('U', 238.0),
     )
 
 # Essentially unzip (*) and rezip but like (('H', 'He', ...), (1.008, 4.003, ...))
@@ -134,7 +142,10 @@ iupacAtomicWeightsTuple = (
         ('Cs', 132.91),
         ('Ba', 137.33),
 
+        ('La', 138.91),
         ('Ce', 140.12),
+        ('Pr', 140.91),
+        ('Nd', 144.24),
 
         ('W', 183.84),
 
@@ -145,6 +156,10 @@ iupacAtomicWeightsTuple = (
         ('Tl', 204.38),
         ('Pb', 207.2),
         ('Bi', 208.98),
+
+        ('Th', 232.04),
+        ('Pa', 231.04),
+        ('U', 238.03),
     )
 
 (symbols, weights) = zip(*iupacAtomicWeightsTuple)
