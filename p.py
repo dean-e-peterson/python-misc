@@ -11,8 +11,20 @@ Avosig = 6.022
 Avofull = 6.02214076 * 10**23
 Avofullsig = 6.02214076
 
+# Atomic Weights
+# Best references I found were
+# IUPAC (International Union of Pure and Applied Chemistry) and its
+# CIAAW (Commission on Isotopic Abundances and Atomic Weights)
+# https://www.ciaaw.org/atomic-weights.htm
+# https://iupac.org/tag/atomic-weights/
+# https://iupac.org/standard-atomic-weights-of-three-technology-critical-elements-revised/
+# https://www.degruyterbrill.com/document/doi/10.1515/pac-2019-0603/html
+
 
 # Atomic weights from the chempy package.
+# https://github.com/bjodah/chempy/blob/master/chempy/util/periodic.py
+# https://en.wikipedia.org/wiki/Standard_atomic_weight#List_of_atomic_weights
+
 chempyAtomicWeightsList = [ (periodic.symbols[n], periodic.relative_atomic_masses[n]) for n in range(118) ]
 
 # See comments down in openstax atomic weights section for how this works.
@@ -111,7 +123,8 @@ BookWeightsType = collections.namedtuple('BookWeightsType', symbols, defaults=we
 b = BookWeightsType()
 
 
-# Some atomic weights from IUPAC Periodic table 4 May 2022
+# Some atomic weights from IUPAC Periodic table 4 May 2022.
+# This is from their periodic table PDF, not their detailed data set or papers.
 iupacAtomicWeightsTuple = (
         ('H', 1.0080),
         ('He', 4.0026),
