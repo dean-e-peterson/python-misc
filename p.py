@@ -1,12 +1,35 @@
 import collections
+import csv
+from chempy.util import periodic
 
-__all__ = ('b', 'i', 'Avo', 'Avosig', 'Avofull', 'Avofullsig')
+__all__ = ('c', 'n', 'b', 'i', 'Avo', 'Avosig', 'Avofull', 'Avofullsig')
+
 
 # Misc
 Avo = 6.022 * 10**23
 Avosig = 6.022
 Avofull = 6.02214076 * 10**23
 Avofullsig = 6.02214076
+
+
+# Atomic weights from the chempy package.
+chempyAtomicWeightsList = [ (periodic.symbols[n], periodic.relative_atomic_masses[n]) for n in range(118) ]
+
+# See comments down in openstax atomic weights section for how this works.
+(symbols, weights) = zip(*chempyAtomicWeightsList)
+chempyWeightsType = collections.namedtuple('chempyWeightsType', symbols, defaults=weights)
+c = chempyWeightsType()
+
+
+# Atomic weights downloaded from NIH PubChem
+# https://pubchem.ncbi.nlm.nih.gov/periodic-table/
+with open('PubChemElements_all.csv') as csvfile:
+    reader = csv.DictReader(csvfile)
+    nihAtomicWeightsList = [ (row['Symbol'], float(row['AtomicMass'])) for row in reader ]
+(symbols, weights) = zip(*nihAtomicWeightsList)
+nihWeightsType = collections.namedtuple('nihWeightsType', symbols, defaults=weights)
+n = nihWeightsType()
+
 
 # Some atomic weights from Appendix A periodic table in OpenStax Chem 2e.
 openstaxAtomicWeightsTuple = (
