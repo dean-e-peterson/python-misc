@@ -93,6 +93,7 @@ openstaxAtomicWeightsTuple = (
         ('Ag', Decimal('107.9')),
 
         ('Sn', Decimal('118.7')),
+        ('Sb', Decimal('121.8')),
 
         ('I', Decimal('126.9')),
         ('Xe', Decimal('131.3')),
@@ -174,6 +175,7 @@ iupacAtomicWeightsTuple = (
         ('Ag', Decimal('107.87')),
 
         ('Sn', Decimal('118.71')),
+        ('Sb', Decimal('121.76')),
 
         ('I', Decimal('126.90')),
         ('Xe', Decimal('131.29')),
