@@ -1,0 +1,1264 @@
+%\documentclass[twocolumn,11pt]{article}
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{chemfig}
+\usepackage{mhchem}
+\usepackage{gensymb} % For \degree at least.
+
+\title{Dean's Chemistry \LaTeX\ in TeXstudio}
+\author{Dean E. Peterson}
+\date{April 9, 2026}
+\renewcommand{\labelenumi}{(\alph{enumi})}
+
+\begin{document}
+\maketitle
+
+\section{Chapter 7}
+\subsection{Chapter 7 Exercises}
+\subsubsection{Exercise 7.23}
+Write the Lewis symbols for each of the following ions:
+
+\begin{enumerate}
+\item
+    $\left[\;
+    \chemfig{\charge{[circle]0=\:,90=\:,180=\:,270=\:}{As}}
+    \;\right]^{3-}$
+\item
+    $\left[\;
+    \chemfig{\charge{[circle]0=\:,90=\:,180=\:,270=\:}{I}}
+    \;\right]^{–}$
+\item
+    $\left[\;
+    \chemfig{\charge{[circle]0=\:}{Be}}
+    \;\right]^{2+}$
+\item
+    $\left[\;
+    \chemfig{\charge{[circle]0=\:,90=\:,180=\:,270=\:}{O}}
+    \;\right]^{2–}$
+\item
+    $\left[\;
+    \chemfig{\charge{[circle]0=\:,90=\:,180=\:,270=\:,315=\:}{Ga}}
+    \;\right]^{3+}$
+\item
+    $\left[\;
+    \chemfig{\charge{[circle]0=\:}{Li}}
+    \;\right]^{+}$
+\item
+    $\left[\;
+    \chemfig{\charge{[circle]0=\:,90=\:,180=\:,270=\:}{N}}
+    \;\right]^{3–}$
+\end{enumerate}
+
+\subsubsection{Exercise 7.23 - Book answers}
+Write the Lewis symbols for each of the following ions:
+
+\begin{enumerate}
+    \item
+        \chemfig{\charge{[circle]0=\:,90=\:,180=\:,270=\:}{As}^{3-}}
+    \item
+        \chemfig{\charge{[circle]0=\:,90=\:,180=\:,270=\:}{I}\enspace^{–}}
+    \item
+        \chemfig{Be^{2+}}
+    \item
+        $\chemfig{\charge{[circle]0=\:,90=\:,180=\:,270=\:}{O}}\;\,^{2–}$
+    \item
+        $\chemfig{Ga}^{3+}$
+    \item
+        \chemfig{Li^+}
+    \item
+        $\chemfig{\charge{[circle]0=\:,90=\:,180=\:,270=\:}{N}}\;\,^{3–}$
+\end{enumerate}
+
+\subsubsection{Exercise 7.25}
+Write the Lewis symbols of the ions in each of the following ionic compounds and the Lewis symbols of the atom from which they are formed:
+\begin{enumerate}
+
+\item MgS \quad\enspace
+\chemfig{Mg^{2+}} \quad
+\chemfig{\charge{[circle]0=\:}{Mg}} \qquad
+\chemfig{\charge{[circle]0=\:,90=\:,180=\:,270=\:}{S}\,\,^{2-}} \quad
+\chemfig{\charge{[circle]0=\:,90=\:,270=\:}{S}} \quad
+
+\item Al2O3 \quad
+\chemfig{Al^{3+}} \quad
+\chemfig{\charge{[circle]0=\:,180=\.}{Al}} \qquad
+\chemfig{\charge{[circle]0=\:,90=\:,180=\:,270=\:}{O}\,\,^{2-}} \quad
+\chemfig{\charge{[circle]0=\:,90=\:,270=\:}{O}} \quad
+
+\item GaCl3 \quad
+\chemfig{Ga^{3+}} \quad
+\chemfig{\charge{[circle]0=\:,180=\.}{Ga}} \qquad
+\chemfig{\charge{[circle]0=\:,90=\:,180=\:,270=\:}{Cl}\,\,^{-}} \quad
+\chemfig{\charge{[circle]0=\:,90=\:,180=\.,270=\:}{Cl}} \quad
+
+\item K2O \qquad
+\chemfig{K^{+}} \quad
+\chemfig{\charge{[circle]0=\.}{K}} \qquad
+\chemfig{\charge{[circle]0=\:,90=\:,180=\:,270=\:}{O}\,\,^{2-}} \quad
+\chemfig{\charge{[circle]0=\:,90=\:,270=\:}{O}} \quad
+
+\item Li3N \qquad
+\chemfig{Li^{+}} \quad
+\chemfig{\charge{[circle]0=\.}{Li}} \qquad
+\chemfig{\charge{[circle]0=\:,90=\:,180=\:,270=\:}{N}\,\,^{3-}} \quad
+\chemfig{\charge{[circle]0=\:,90=\:,180=\.}{N}} \quad
+
+\item KF \qquad\enspace
+\chemfig{K^{+}} \quad
+\chemfig{\charge{[circle]0=\.}{K}} \qquad
+\chemfig{\charge{[circle]0=\:,90=\:,180=\:,270=\:}{F}\,\,^{-}} \quad
+\chemfig{\charge{[circle]0=\:,90=\:,180=\.,270=\:}{F}} \quad
+
+\end{enumerate}
+
+\subsubsection{Exercise 7.27}
+
+Write the Lewis structure for the diatomic molecule P2, an unstable form of phosphorus found in high-temperature phosphorus vapor.
+
+\begin{itemize}
+    \item Write the molecule with a single bond. \\
+        \chemfig{P - P}
+    \item Add valence electrons. \\
+        \chemfig{\charge{[circle]90=\:,270=\:}{P} -
+                 \charge{[circle]90=\:,270=\:}{P}}
+    \item Use multiple bonds to try for octets. \\
+        \chemfig{\charge{[circle]90=\:}{P} ~
+                 \charge{[circle]90=\:}{P}}
+\end{itemize}
+
+\subsubsection{Exercise 7.29}
+Write Lewis structures for the following:
+
+\begin{enumerate}
+
+\item \ce{O2}: \quad
+\chemfig{\charge{[circle]90=\:,270=\:}{O} =
+         \charge{[circle]90=\:,270=\:}{O}}
+
+\item \ce{H2CO}: \quad
+\chemfig{C (-[:90]H) (-[:270]H) = \charge{[circle]90=\:,270=\:}{O}}
+
+\item \ce{AsF3}: \quad
+\chemfig{\charge{[circle]270=\:}{As}
+         (-[:180]\charge{[circle]-90=\:,180=\:,90=\:}{F})
+         (-[:90]\charge{[circle]0=\:,180=\:,90=\:}{F})
+         (-[:0]\charge{[circle]-90=\:,0=\:,90=\:}{F})}
+
+\item \ce{ClNO}: \quad
+\chemfig{\charge{[circle]-90=\:,180=\:,90=\:}{Cl} -
+         \charge{[circle]-90=\:}{N} =
+         \charge{[circle]-90=\:,90=\:}{O}}
+
+\item \ce{SiCl4}: \quad
+\chemfig{Si
+         (-[:0]\charge{[circle]-90=\:,0=\:,90=\:}{Cl})
+         (-[:90]\charge{[circle]0=\:,180=\:,90=\:}{Cl})
+         (-[:180]\charge{[circle]-90=\:,180=\:,90=\:}{Cl})
+         (-[:270]\charge{[circle]-90=\:,180=\:,0=\:}{Cl})}
+
+\item \ce{H3O^{+}}: \quad
+$\left[
+\chemfig{\charge{[circle]270=\:}{O}
+    (-[:180]H)
+    (-[:90]H)
+    (-[:0]H)}
+\right]^+$
+
+\item \ce{NH4+} : \quad
+$\left[
+\chemfig{N
+    (-[:0]H)
+    (-[:90]H)
+    (-[:180]H)
+    (-[:270]H)}
+\right]^+$
+
+\item \ce{BF4-}: \quad
+$\left[\;
+\chemfig{B
+    (-[:0]\charge{[circle]-90=\:,0=\:,90=\:}{F})
+    (-[:90]\charge{[circle]0=\:,180=\:,90=\:}{F})
+    (-[:180]\charge{[circle]-90=\:,180=\:,90=\:}{F})
+    (-[:270]\charge{[circle]-90=\:,180=\:,0=\:}{F})}
+\;\right]^-$
+
+\item \ce{HCCH}: \quad
+\chemfig{H - C ~ C - H}
+
+\item \ce{ClCN}: \quad
+\chemfig{\charge{[circle]-90=\:,90=\:}{Cl} =
+         C =
+         \charge{[circle]-90=\:,90=\:}{N}}
+
+\item \ce{C2^{2+}}: \quad
+$\left[\,
+\chemfig{C ~ C}
+\,\right]^{2+}$
+
+\end{enumerate}
+
+\subsubsection{Exercise 7.31}
+
+Write Lewis structures for the following:
+
+\begin{enumerate}
+
+\item \ce{SeF6}: \quad
+\chemfig{Se
+         (-[:0]\charge{[circle]90=\:,0=\:,270=\:}{F})
+         (-[:60]\charge{[circle]150=\:,60=\:,330=\:}{F})
+         (-[:120]\charge{[circle]210=\:,120=\:,30=\:}{F})
+         (-[:180]\charge{[circle]270=\:,180=\:,90=\:}{F})
+         (-[:240]\charge{[circle]330=\:,240=\:,150=\:}{F})
+         (-[:300]\charge{[circle]30=\:,300=\:,210=\:}{F})}
+
+\item \ce{XeF4}: \quad
+\chemfig{\charge{[circle]45=\:,225=\:}{Xe}
+    (-[:0]\charge{[circle]-90=\:,0=\:,90=\:}{F})
+    (-[:90]\charge{[circle]0=\:,180=\:,90=\:}{F})
+    (-[:180]\charge{[circle]-90=\:,180=\:,90=\:}{F})
+    (-[:270]\charge{[circle]-90=\:,180=\:,0=\:}{F})}
+
+\item \ce{SeCl3^{+}}: \quad
+$\left[\;
+\chemfig{\charge{[circle]270=\:}{Se}
+    (-[:0]\charge{[circle]-90=\:,0=\:,90=\:}{Cl})
+    (-[:90]\charge{[circle]0=\:,180=\:,90=\:}{Cl})
+    (-[:180]\charge{[circle]-90=\:,180=\:,90=\:}{Cl})}
+\;\right]^{+}$
+
+\item \ce{Cl2BBCl2}: (contains a B–B bond) \\[2ex]
+\chemfig{B
+         (-[:120]\charge{[circle]0=\:,90=\:,180=\:}{Cl})
+         (=[:240]\charge{[circle]0=\:,180=\:}{Cl}) -
+         B
+         (=[:60]\charge{[circle]0=\:,180=\:}{Cl})
+         (-[:300]\charge{[circle]0=\:,-90=\:,180=\:}{Cl}) }
+\\[3ex]
+\chemfig{B
+    (-[:120]\charge{[circle]0=\:,90=\:,180=\:}{Cl})
+    (-[:240]\charge{[circle]0=\:,-90=\:,180=\:}{Cl}) -
+    B
+    (-[:60]\charge{[circle]0=\:,90=\:,180=\:}{Cl})
+    (-[:300]\charge{[circle]0=\:,-90=\:,180=\:}{Cl}) }
+
+\end{enumerate}
+
+\subsubsection{Exercise 7.35}
+
+Methanol, $\ce{H3COH}$, is used as the fuel in some race cars. Ethanol, $\ce{C2H5OH}$, is used extensively as motor fuel in Brazil. Both methanol and ethanol produce $\ce{CO2}$ and $\ce{H2O}$ when they burn. Write the chemical equations for these combustion reactions using Lewis structures instead of chemical formulas.
+
+\begin{itemize}
+\item \;
+\ce{2 H3COH + 3 O2 -> 2 CO2 + 4 H2O } \\[1ex]
+\ce{
+    \large{2} $\left[
+\chemname{\chemfig{
+        C
+        (-[:90]H)
+        (-[:180]H)
+        (-[:270]H)
+        - \charge{[circle]90=\:,-90=\:}{O}
+        - H
+}}{methanol \ce{H3COH}}
+      \right]$
+  + 3 $\left[
+\chemname{\chemfig{
+        \charge{[circle]90=\:,-90=\:}{O}
+        = \charge{[circle]90=\:,-90=\:}{O}
+}}{\ce{O2}}
+      \right]$
+ -> 2 $\left[
+\chemname{\chemfig{
+        \charge{[circle]-90=\:,90=\:}{O}
+        = C
+        = \charge{[circle]-90=\:,90=\:}{O}
+}}{\ce{CO2}}
+      \right]$
+  + 4 $\left[
+\chemname{\chemfig{
+        H
+        -\charge{[circle]0=\:,90=\:}{O}
+        -[:-90]H
+}}{\ce{H2O}}
+      \;\right]$
+   }
+\item \;
+\ce{C2H5OH + 3 O2 -> 2 CO2 + 3 H2O } \\[1ex]
+\ce{
+    $\left[
+\chemname{\chemfig{
+        C
+        (-[:90]H)
+        (-[:180]H)
+        (-[:270]H)
+        - C
+        (-[:90]H)
+        (-[:270]H)
+        - \charge{[circle]90=\:,-90=\:}{O}
+        - H
+}}{ethanol \ce{C2H5OH}}
+    \right]$
+    + 3 $\left[
+\chemname{\chemfig{
+        \charge{[circle]90=\:,-90=\:}{O}
+        = \charge{[circle]90=\:,-90=\:}{O}
+}}{\ce{O2}}
+    \right]$
+    -> 2 $\left[
+\chemname{\chemfig{
+        \charge{[circle]-90=\:,90=\:}{O}
+        = C
+        = \charge{[circle]-90=\:,90=\:}{O}
+}}{\ce{CO2}}
+    \right]$
+    + 3 $\left[
+\chemname{\chemfig{
+        H
+        -\charge{[circle]0=\:,90=\:}{O}
+        -[:-90]H
+}}{\ce{H2O}}
+    \;\right]$
+}
+
+\end{itemize}
+
+\subsubsection{Exercise 7.37}
+\begin{itemize}
+    \item \ce{CCl4} \quad
+\chemfig{C
+    (-[:0]\charge{[circle]-90=\:,0=\:,90=\:}{Cl})
+    (-[:90]\charge{[circle]0=\:,180=\:,90=\:}{Cl})
+    (-[:180]\charge{[circle]-90=\:,180=\:,90=\:}{Cl})
+    (-[:270]\charge{[circle]-90=\:,180=\:,0=\:}{Cl})}
+
+    \item \ce{Cl2CO} \quad
+\chemfig{C
+    (-[:90]\charge{[circle]180=\:,90=\:,0=\:}{Cl})
+    (-[:270]\charge{[circle]180=\:,-90=\:,0=\:}{Cl})
+    - \charge{[circle]90=\:,0=\:,270=\:}{O}}
+
+\end{itemize}
+
+\subsubsection{Exercise 7.39}
+
+The arrangement of atoms in several biologically important molecules is given here. Complete the Lewis structures of these molecules by adding multiple bonds and lone pairs. Do not add any more atoms.
+
+First reproduce the question diagrams in the book, then add Lewis structure dots and multiple bonds.
+
+\begin{enumerate}
+
+%\setchemfig{atom sep=2em} %default 3em
+
+\item the amino acid serine: 42 $e^-$, 16 after single bonds \quad \\[2ex]
+\chemfig{
+H
+-N (-[:90]H)
+-C (-[:-90]H) (-[:90,2]C (-[:180]H) (-[:0]H) -[:90]O - H)
+-C (-[:90]O)
+-O
+-H
+}
+\qquad
+\chemfig{
+    H
+    -\charge{[circle]-90=\:}{N} (-[:90]H)
+    -C (-[:-90]H) (-[:90,2]C (-[:180]H) (-[:0]H)
+        -[:90]\charge{[circle]180=\:,90=\:}{O} - H)
+    -C (=[:90]\charge{[circle]180=\:,0=\:}{O})
+    -\charge{[circle]90=\:,-90=\:}{O}
+    -H
+}
+
+\item urea: 24 $e^-$, 10 after single bonds \quad \\[2ex]
+
+\chemfig{
+H
+-N (-[:90]H)
+-C (-[:90]O)
+-N (-[:90]H)
+-H
+}
+\qquad
+\chemfig{
+    H
+    -\charge{[circle]-90=\:}{N} (-[:90]H)
+    -C (=[:90]\charge{[circle]180=\:,0=\:}{O})
+    -\charge{[circle]-90=\:}{N} (-[:90]H)
+    -H
+}
+
+\item pyruvic acid: 34 $e^-$, 16 after single bonds \quad \\[2ex]
+
+\chemfig{
+H
+-C (-[:90]H) (-[:-90]H)
+-C (-[:90]O)
+-C (-[:90]O)
+-O
+-H
+}
+\qquad
+\chemfig{
+    H
+    -C (-[:90]H) (-[:-90]H)
+    -C (=[:90]\charge{[circle]180=\:,0=\:}{O})
+    -C (=[:90]\charge{[circle]180=\:,0=\:}{O})
+    -\charge{[circle]90=\:,-90=\:}{O}
+    -H
+}
+
+\item uracil: 42 $e^-$, 18 after single bonds \quad \\[2ex]
+
+\chemfig{
+C*6( (-O)
+-N (-H)
+-C (-H)
+-C (-H)
+-C (-O)
+-N (-H)
+-)
+}
+\qquad
+\chemfig{
+C*6( (=\charge{[circle]120=\:,300=\:}{O})
+-\charge{[circle]330=\:}{N} (-H)
+-C (-H)
+=C (-H)
+-C (=\charge{[circle]180=\:,0=\:}{O})
+-\charge{[circle]330=\:}{N} (-H)
+-)
+}
+
+\item carbonic acid: 24 $e^-$, 14 after single bonds \quad \\[2ex]
+
+\chemfig{
+H
+-O
+-C (-[:90]O)
+-O
+-H
+}
+\qquad
+\chemfig{
+    H
+    -\charge{[circle]-90=\:,90=\:}{O}
+    -C (=[:90]\charge{[circle]180=\:,0=\:}{O})
+    -\charge{[circle]-90=\:,90=\:}{O}
+    -H
+}
+\end{enumerate}
+
+\subsubsection{Exercise 7.41}
+
+\ce{C3H6} has 18 valence electrons \\[2ex]
+
+\chemfig{
+    C (-[:90]H) (-[:180]H) (-[:-90]H)
+    -C (-[:90]H)
+    =C (-[:90]H) (-[:0]H)
+}
+
+\subsubsection{Exercise 7.45}
+
+Write resonance forms that describe the distribution of electrons in each of these molecules or ions.
+
+\begin{enumerate}
+
+\item sulfur dioxide, \ce{SO2}: \\[2ex]
+
+\chemfig{
+    \charge{[circle]180=\:,90=\:,-90=\:}{O}
+    -\charge{[circle]-90=\:}{S}
+    =\charge{[circle]90=\:,-90=\:}{O}
+}
+\qquad $\longleftrightarrow$ \qquad
+\chemfig{
+    \charge{[circle]90=\:,-90=\:}{O}
+    =\charge{[circle]-90=\:}{S}
+    -\charge{[circle]0=\:,90=\:,-90=\:}{O}
+} \\[2ex]
+
+\item  carbonate ion, \ce{CO3^{2-}}: \\[2ex]
+
+$\left[\;
+\chemfig{
+    \charge{[circle]90=\:,-90=\:}{O}
+    =C (-[:90]\charge{[circle]180=\:,90=\:,0=\:}{O})
+    -\charge{[circle]0=\:,90=\:,-90=\:}{O}
+}
+\;\right]^{2-}$
+\qquad $\longleftrightarrow$ \qquad
+$\left[\;
+\chemfig{
+    \charge{[circle]180=\:,90=\:,-90=\:}{O}
+    -C (=[:90]\charge{[circle]180=\:,0=\:}{O})
+    -\charge{[circle]0=\:,90=\:,-90=\:}{O}
+}
+\;\right]^{2-}$
+\qquad $\longleftrightarrow$ \qquad
+$\left[\;
+\chemfig{
+    \charge{[circle]180=\:,90=\:,-90=\:}{O}
+    -C (-[:90]\charge{[circle]180=\:,90=\:,0=\:}{O})
+    =\charge{[circle]90=\:,-90=\:}{O}
+}
+\;\right]^{2-}$
+
+\item  hydrogen carbonate ion, \ce{HCO3^{-}} (C is bonded to an OH group and two O atoms):
+
+$\left[\;
+\chemfig{
+    \charge{[circle]90=\:,-90=\:}{O}
+    =C (-[:90]\charge{[circle]180=\:,90=\:}{O} - H)
+    -\charge{[circle]0=\:,90=\:,-90=\:}{O}
+}
+\;\right]^-$
+\qquad $\longleftrightarrow$ \qquad
+$\left[\;
+\chemfig{
+    \charge{[circle]180=\:,90=\:,-90=\:}{O}
+    -C (=[:90]\charge{[circle]180=\:}{O} - H)
+    -\charge{[circle]0=\:,90=\:,-90=\:}{O}
+}
+\;\right]^-$
+\qquad $\longleftrightarrow$ \qquad
+$\left[\;
+\chemfig{
+    \charge{[circle]180=\:,90=\:,-90=\:}{O}
+    -C (-[:90]\charge{[circle]180=\:,90=\:}{O} - H)
+    =\charge{[circle]90=\:,-90=\:}{O}
+}
+\;\right]^-$
+
+\item  pyridine: \\[2ex]
+
+\chemfig{
+    C*6 ( (-H)
+    =C (-H)
+    -C (-H)
+    =C (-H)
+    -\charge{[circle]90=\:}{N}
+    =C (-H)
+    -
+    )}
+\qquad $\longleftrightarrow$ \qquad
+\chemfig{
+    C*6 ( (-H)
+    -C (-H)
+    =C (-H)
+    -C (-H)
+    =\charge{[circle]90=\:}{N}
+    -C (-H)
+    =
+    )}
+
+\item  the allyl ion: \\[2ex]
+
+$\left[
+\chemfig{
+    H
+    -C (-[:90]H)
+    =C (-[:90]H)
+    -\charge{[circle]-90=\:}{C} (-[:90]H)
+    -H
+}
+\right]^-$
+\qquad $\longleftrightarrow$ \qquad
+$\left[
+\chemfig{
+    H
+    -\charge{[circle]-90=\:}{C} (-[:90]H)
+    -C (-[:90]H)
+    =C (-[:90]H)
+    -H
+}
+\right]^-$
+
+\end{enumerate}
+
+\subsubsection{Exercise 4.47}
+
+Sodium nitrite, which has been used to preserve bacon and other meats, is an ionic compound. Write the resonance forms of the nitrite ion, $\ce{NO2^-}$.\\[2ex]
+
+$\left[\;
+\chemfig{
+    \charge{[circle]90=\:,-90=\:}{O}
+    =\charge{[circle]-90=\:}{N}
+    -\charge{[circle]0=\:,90=\:,-90=\:}{O}
+}
+\enspace\right]^-$
+\qquad $\longleftrightarrow$ \qquad
+$\left[\enspace
+\chemfig{
+    \charge{[circle]180=\:,90=\:,-90=\:}{O}
+    -\charge{[circle]-90=\:}{N}
+    =\charge{[circle]90=\:,-90=\:}{O}
+}
+\;\right]^-$
+
+\subsubsection{Exercise 4.49}
+
+Write the Lewis structures for the following, and include resonance structures where appropriate. Indicate which has the strongest carbon-oxygen bond.
+
+\begin{enumerate}
+
+\item \ce{CO2}: \qquad
+\chemfig{
+    \charge{[circle]90=\:,180=\:}{O}
+    =C
+    =\charge{[circle]90=\:,0=\:}{O}
+}
+
+\item \ce{CO}: \qquad
+\chemfig{
+    \charge{[circle]90=\:}{C}
+    ~ \charge{[circle]90=\:}{O}
+}
+
+\end{enumerate}
+
+
+\subsubsection{Exercise 7.51}
+
+Determine the formal charge of each element in the following: \\
+Wait, they are all 0.
+
+\begin{enumerate}
+
+\item \ce{HCl}: \qquad
+\chemfig{
+    \charge{[circle]-90:10pt=0}{H}
+    -\charge{[circle]-90:10pt=0,0=\:,90=\:,-90=\:}{Cl}
+} \\[2ex]
+
+\item \ce{CF4}: \qquad
+\chemfig{
+C
+    (-[:0]\charge{[circle]0=\:,90=\:,-90=\:}{F})
+    (-[:90]\charge{[circle]0=\:,90=\:,180=\:}{F})
+    (-[:180]\charge{[circle]180=\:,90=\:,-90=\:}{F})
+    (-[:270]\charge{[circle]0=\:,-90=\:,180=\:}{F})
+} \\[2ex]
+
+\item \ce{PCl3}: \qquad
+\chemfig{
+    \charge{[circle]-90=\:}{P}
+    (-[:0]\charge{[circle]0=\:,90=\:,-90=\:}{Cl})
+    (-[:90]\charge{[circle]0=\:,90=\:,180=\:}{Cl})
+    (-[:180]\charge{[circle]180=\:,90=\:,-90=\:}{Cl})
+} \\[2ex]
+
+\item \ce{PF5}: \qquad
+\chemfig{
+    P
+    (-[:18]\charge{[circle]-90=\:,0=\:,90=\:}{F})
+    (-[:90]\charge{[circle]0=\:,90=\:,180=\:}{F})
+    (-[:162]\charge{[circle]270=\:,180=\:,90=\:}{F})
+    (-[:234]\charge{[circle]0=\:,-90=\:,180=\:}{F})
+    (-[:306]\charge{[circle]0=\:,-90=\:,180=\:}{F})
+} \\[2ex]
+
+\end{enumerate}
+
+
+\subsubsection{Exercise 7.54}
+
+Calculate the formal charge of each element in the following compounds and ions:\\[3ex]
+
+\begin{enumerate}
+
+\item \ce{F2CO} \qquad
+\chemfig{
+    \charge{[circle]-90:10pt=0,90=\:,180=\:,270=\:}{F}
+    -\charge{[circle]-90:10pt=0}{C}
+        (=[:90]\charge{[circle]90:10pt=0,180=\:,0=\:}{O})
+    -\charge{[circle]-90:10pt=0,90=\:,0=\:,270=\:}{F}
+} \\[3ex]
+
+\item \ce{NO-} \qquad
+$\left[
+\chemfig{
+    \charge{[circle]-90:10pt=-1,90=\:,270=\:}{N}
+    =\charge{[circle]-90:10pt=0,90=\:,270=\:}{O}
+}
+\right]^-$ \\[3ex]
+
+\item \ce{BF4-} \qquad
+$\left[\enspace
+\chemfig{
+    \charge{[circle]-45:10pt=-1}{B}
+    (-[:0]\charge{[circle]-90:10pt=0,90=\:,0=\:,270=\:}{F})
+    (-[:90]\charge{[circle]90:10pt=0,90=\:,180=\:,0=\:}{F})
+    (-[:180]\charge{[circle]-90:10pt=0,90=\:,180=\:,270=\:}{F})
+    (-[:270]\charge{[circle]-90:10pt=0,0=\:,180=\:,270=\:}{F})
+}
+\enspace\right]^-$ \\[6ex]
+
+\item \ce{SnCl3-} \qquad
+$\left[\enspace
+\chemfig{
+    \charge{[circle]-90:10pt=-1,-90=\:}{Sn}
+    (-[:0]\charge{[circle]-90:10pt=0,90=\:,0=\:,270=\:}{Cl})
+    (-[:90]\charge{[circle]90:10pt=0,90=\:,180=\:,0=\:}{Cl})
+    (-[:180]\charge{[circle]-90:10pt=0,90=\:,180=\:,270=\:}{Cl})
+}
+\enspace\right]^-$ \\[3ex]
+
+\item \ce{H2CCH2} \qquad
+\chemfig{
+    \charge{[circle]180:10pt=0}{C}
+    (-[:120]\charge{[circle]180:10pt=0}{H})
+    (-[:240]\charge{[circle]180:10pt=0}{H})
+    =\charge{[circle]0:10pt=0}{C}
+    (-[:60]\charge{[circle]0:10pt=0}{H})
+    (-[:-60]\charge{[circle]0:10pt=0}{H})
+} \\[3ex]
+
+\item \ce{ClF3} \qquad\qquad
+\chemfig{
+    \charge{[circle]-90:10pt=0,-60=\:,-120=\:}{Cl}
+    (-[:0]\charge{[circle]-90:10pt=0,90=\:,0=\:,270=\:}{F})
+    (-[:90]\charge{[circle]90:10pt=0,90=\:,0=\:,180=\:}{F})
+    (-[:180]\charge{[circle]-90:10pt=0,90=\:,180=\:,270=\:}{F})
+} \\[6ex]
+
+\item \ce{SeF6} \qquad\qquad
+\chemfig{
+    \charge{[circle]0:10pt=0}{Se}
+    (-[:30]\charge{[circle]0:10pt=0,90=\:,0=\:,270=\:}{F})
+    (-[:90]\charge{[circle]90:10pt=0,90=\:,0=\:,180=\:}{F})
+    (-[:150]\charge{[circle]180:10pt=0,90=\:,270=\:,180=\:}{F})
+    (-[:210]\charge{[circle]180:10pt=0,90=\:,270=\:,180=\:}{F})
+    (-[:270]\charge{[circle]-90:10pt=0,270=\:,0=\:,180=\:}{F})
+    (-[:330]\charge{[circle]0:10pt=0,90=\:,0=\:,270=\:}{F})
+} \\[6ex]
+
+\item \ce{PO4^{3-}} \qquad
+$\left[\enspace
+\chemfig{
+    \charge{[circle]-45:10pt=+1}{P}
+    (-[:0]\charge{[circle]-90:10pt=-1,90=\:,0=\:,270=\:}{O})
+    (-[:90]\charge{[circle]90:10pt=-1,90=\:,0=\:,180=\:}{O})
+    (-[:180]\charge{[circle]-90:10pt=-1,90=\:,180=\:,270=\:}{O})
+    (-[:270]\charge{[circle]-90:10pt=-1,180=\:,0=\:,270=\:}{O})
+}
+\enspace\right]^{3-}$ \\[3ex]
+
+\end{enumerate}
+
+\subsubsection{Exercise 7.55}
+
+Draw all possible resonance structures for each of these compounds. Determine the formal charge on each atom in each of the resonance structures:
+
+\begin{enumerate}
+
+\item \ce{O3} \qquad \quad
+\chemfig{
+    \charge{[circle]-90:10pt=0,180=\:,270=\:}{O}
+    =[:-45]\charge{[circle]-90:10pt=+1,-90=\:}{O}
+    -[:45]\charge{[circle]-90:10pt=-1,90=\:,0=\:,270=\:}{O}
+}
+\qquad \qquad \qquad $\longleftrightarrow$ \qquad
+\chemfig{
+    \charge{[circle]-90:10pt=-1,90=\:,180=\:,270=\:}{O}
+    -[:-45]\charge{[circle]-90:10pt=+1,-90=\:}{O}
+    =[:45]\charge{[circle]-90:10pt=0,0=\:,270=\:}{O}
+} \\[4ex]
+
+\item \ce{SO2} \qquad \enspace
+\chemfig{
+    \charge{[circle]-90:10pt=0,180=\:,270=\:}{O}
+    =\charge{[circle]-90:10pt=+1,-90=\:}{S}
+    -\charge{[circle]-90:10pt=-1,90=\:,0=\:,270=\:}{O}
+}
+\qquad \qquad \enspace $\longleftrightarrow$ \qquad
+\chemfig{
+    \charge{[circle]-90:10pt=-1,90=\:,180=\:,270=\:}{O}
+    -\charge{[circle]-90:10pt=+1,-90=\:}{S}
+    =\charge{[circle]-90:10pt=0,0=\:,270=\:}{O}
+} \\[4ex]
+
+\item \ce{NO2-} \qquad
+$\left[\enspace
+\chemfig{
+    \charge{[circle]-90:10pt=0,180=\:,270=\:}{O}
+    =\charge{[circle]-90:10pt=0,-90=\:}{N}
+    -\charge{[circle]-90:10pt=-1,90=\:,0=\:,270=\:}{O}
+}
+\enspace\right]^-$
+\qquad $\longleftrightarrow$ \qquad
+$\left[\enspace
+\chemfig{
+    \charge{[circle]-90:10pt=-1,90=\:,180=\:,270=\:}{O}
+    -\charge{[circle]-90:10pt=0,-90=\:}{N}
+    =\charge{[circle]-90:10pt=0,0=\:,270=\:}{O}
+}
+\enspace\right]^-$ \\[6ex]
+
+\item \ce{NO3-} \qquad
+$\left[\enspace
+\chemfig{
+    \charge{[circle]-90:10pt=0,180=\:,270=\:}{O}
+    =\charge{[circle]-90:10pt=+1}{N}
+      (-[:90]\charge{[circle]90:10pt=-1,90=\:,0=\:,180=\:}{O})
+    -\charge{[circle]-90:10pt=-1,90=\:,0=\:,270=\:}{O}
+}
+\enspace\right]^-$
+\quad $\longleftrightarrow$ \quad
+$\left[\enspace
+\chemfig{
+    \charge{[circle]-90:10pt=-1,90=\:,180=\:,270=\:}{O}
+    =\charge{[circle]-90:10pt=+1}{N}
+    (=[:90]\charge{[circle]90:10pt=0,0=\:,180=\:}{O})
+    -\charge{[circle]-90:10pt=-1,90=\:,0=\:,270=\:}{O}
+}
+\enspace\right]^-$
+\quad $\longleftrightarrow$ \quad
+$\left[\enspace
+\chemfig{
+    \charge{[circle]-90:10pt=-1,90=\:,180=\:,270=\:}{O}
+    -\charge{[circle]-90:10pt=+1}{N}
+    (-[:90]\charge{[circle]90:10pt=-1,90=\:,0=\:,180=\:}{O})
+    =\charge{[circle]-90:10pt=0,0=\:,270=\:}{O}
+}
+\enspace\right]^-$ \\[4ex]
+
+\end{enumerate}
+
+\subsubsection{Exercise 7.59}
+
+Draw the structure of hydroxylamine, $\ce{H3NO}$, and assign formal charges; look up the structure. Is the actual structure consistent with the formal charges? \\
+
+\chemfig{
+    \charge{[circle]-45:8pt=\footnotesize{+1}}{N}
+    (-[:90]\charge{[circle]-45:8pt=\footnotesize{0}}{H})
+    (-[:180]\charge{[circle]-45:8pt=\footnotesize{0}}{H})
+    (-[:270]\charge{[circle]-45:8pt=\footnotesize{0}}{H})
+    -\charge{[circle]0=\:,90=\:,-90=\:,-45:8pt=\footnotesize{-1}}{O}
+}
+\qquad
+\chemfig{
+    -\charge{[circle]-90=\:,-45:8pt=\footnotesize{0}}{N}
+    (-[:90]\charge{[circle]-45:10pt=\footnotesize{0}}{H})
+    (-[:180]\charge{[circle]-45:10pt=\footnotesize{0}}{H})
+    -\charge{[circle]90=\:,-90=\:,-45:8pt=\footnotesize{0}}{O}
+    (-[:0]\charge{[circle]-45:10pt=\footnotesize{0}}{H})
+}
+\qquad
+\chemfig{
+    -\charge{[circle]90=\:,-90=\:,-45:8pt=\footnotesize{-1}}{N}
+    (-[:180]\charge{[circle]-45:8pt=\footnotesize{0}}{H})
+    -\charge{[circle]-90=\:,-45:8pt=\footnotesize{+1}}{O}
+    (-[:90]\charge{[circle]-45:8pt=\footnotesize{0}}{H})
+    (-[:0]\charge{[circle]-45:8pt=\footnotesize{0}}{H})
+}\qquad
+\chemfig{
+    \charge{[circle]-45:8pt=\footnotesize{+2}}{O}
+    (-[:90]\charge{[circle]-45:8pt=\footnotesize{0}}{H})
+    (-[:180]\charge{[circle]-45:8pt=\footnotesize{0}}{H})
+    (-[:270]\charge{[circle]-45:8pt=\footnotesize{0}}{H})
+    -\charge{[circle]0=\:,90=\:,-90=\:,-45:8pt=\footnotesize{-2}}{N}
+}
+
+\subsubsection{Exercise 7.61}
+
+Formal charges of \ce{NF3}. \\[2ex]
+
+\chemfig{
+    \charge{[circle]-90=\:,-45:8pt=\footnotesize{0}}{N}
+    (-[:180]\charge{[circle]180=\:,90=\:,-90=\:,-45:8pt=\footnotesize{0}}{F})
+    (-[:90]\charge{[circle]180=\:,90=\:,0=\:,-45:8pt=\footnotesize{0}}{F})
+    (-[:0]\charge{[circle]0=\:,90=\:,-90=\:,-45:8pt=\footnotesize{0}}{F})
+}
+
+\subsubsection{Exercise 7.63}
+
+Sulfuric acid is the industrial chemical produced in greatest quantity worldwide. About 90 billion pounds are produced each year in the United States alone. Write the Lewis structure for sulfuric acid, $\ce{H2SO4}$, which has two oxygen atoms and two OH groups bonded to the sulfur. \\[2ex]
+
+\chemfig{
+    \charge{[circle]-45:8pt=\footnotesize{+2}}{S}
+    (-[:180]\charge{[circle]-90=\:,180=\:,90=\:,-45:8pt=\footnotesize{-1}}{O})
+    (-[:0]\charge{[circle]-90=\:,0=\:,90=\:,-45:8pt=\footnotesize{-1}}{O})
+    (-[:90]\charge{[circle]90=\:,180=\:,-45:8pt=\footnotesize{0}}{O}
+     -[:0]\charge{[circle]-45:8pt=\footnotesize{0}}{H})
+    (-[:-90]\charge{[circle]-90=\:,180=\:,-45:8pt=\footnotesize{0}}{O}
+     -[:0]\charge{[circle]-45:8pt=\footnotesize{0}}{H})
+}
+\qquad \qquad
+\chemfig{
+    \charge{[circle]180=\:,-45:8pt=\footnotesize{+1}}{S}
+    (-[:0]\charge{[circle]-90=\:,90=\:,-45:8pt=\footnotesize{0}}{O}
+     -[:0]\charge{[circle]-90=\:,0=\:,90=\:,-45:8pt=\footnotesize{-1}}{O})
+    (-[:90]\charge{[circle]90=\:,180=\:,-45:8pt=\footnotesize{0}}{O}
+    -[:0]\charge{[circle]-45:8pt=\footnotesize{0}}{H})
+    (-[:-90]\charge{[circle]-90=\:,180=\:,-45:8pt=\footnotesize{0}}{O}
+    -[:0]\charge{[circle]-45:8pt=\footnotesize{0}}{H})
+}
+
+\subsubsection{Exercise 7.73}
+
+32 valence electrons, with 6 left after adding all single bonds. \\
+
+\chemfig{
+    H
+    -C (-[:90]H) (-[:-90]H)
+    -C (-[:90]H) (-[:-90]H)
+    -C
+    ~C
+    -C (-[:-90]H)
+    =C (-[:-90]H)
+    -H
+}
+
+\subsubsection{Exercise 7.95}
+
+Identify the electron pair geometry and the molecular structure of each of the following molecules: \\[2ex]
+
+\begin{enumerate}
+
+\item $\ce{ClNO}$ (N is the central atom)  14 $e^-$ after single bonds \\[2ex]
+\chemfig{
+    \charge{[circle]180=\:,90=\:,-90=\:}{Cl}
+    - \charge{[circle]-90=\:}{N}
+    = \charge{[circle]90=\:,-90=\:}{O}
+}
+
+\item $\ce{CS2}$ 12  $e^-$ after single bonds \\[2ex]
+\chemfig{
+    \charge{[circle]90=\:,-90=\:}{S}
+    = C
+    = \charge{[circle]90=\:,-90=\:}{S}
+}
+
+\item $\ce{Cl2CO}$ (C is the central atom) 18  $e^-$ after single bonds \\[2ex]
+\chemfig{
+    \charge{[circle]180=\:,90=\:,-90=\:}{Cl}
+    - C
+      (=[:90] \charge{[circle]180=\:,0=\:}{O})
+    - \charge{[circle]0=\:,90=\:,-90=\:}{Cl}
+}
+
+\item $\ce{Cl2SO}$ (S is the central atom) 20  $e^-$ after single bonds \\[2ex]
+\chemfig{
+    \charge{[circle]180=\:,90=\:,-90=\:}{Cl}
+    - \charge{[circle]-90=\:}{S}
+      (-[:90] \charge{[circle]180=\:,90=\:,0=\:}{O})
+    - \charge{[circle]0=\:,90=\:,-90=\:}{Cl}
+}
+
+\item $\ce{SO2F2}$ (S is the central atom) 24  $e^-$ after single bonds \\[2ex]
+\chemfig{
+    \charge{[circle]180=\:,90=\:,-90=\:}{F}
+    - S
+      (-[:90] \charge{[circle]180=\:,90=\:,0=\:}{O})
+      (-[:-90] \charge{[circle]180=\:,-90=\:,0=\:}{O})
+    - \charge{[circle]0=\:,90=\:,-90=\:}{F}
+}
+
+\item $\ce{XeO2F2}$ (Xe is the central atom) 26 $e^-$ after single bonds \\[2ex]
+\chemfig{
+    \charge{[circle]180=\:,90=\:,-90=\:}{F}
+    - \charge{[circle]-45=\:}{Xe}
+      (-[:90] \charge{[circle]180=\:,90=\:,0=\:}{O})
+      (-[:-90] \charge{[circle]180=\:,-90=\:,0=\:}{O})
+    - \charge{[circle]0=\:,90=\:,-90=\:}{F}
+}
+
+\item $\ce{ClOF2^+}$ (Cl is the central atom) 20 $e^-$ after single bonds \\[2ex]
+
+$\left[\enspace
+\chemfig{
+    \charge{[circle]180=\:,90=\:,-90=\:}{F}
+    - \charge{[circle]-90=\:}{Cl}
+      (-[:90] \charge{[circle]180=\:,90=\:,0=\:}{O})
+    - \charge{[circle]0=\:,90=\:,-90=\:}{F}
+}
+\enspace\right]^+$
+\end{enumerate}
+
+\subsubsection{Exercise 7.97}
+
+Help with \ce{XeF2}, 22 valence electrons, 18 after single bonds, 6 after loading up F atoms with 3 lone pairs each. \\[2ex]
+\chemfig{
+    \charge{[circle]180=\:,90=\:,-90=\:}{F}
+    - \charge{[circle]90=\:,-60=\:,-120=\:}{Xe}
+    - \charge{[circle]0=\:,90=\:,-90=\:}{F}
+}
+
+\subsubsection{Exercise 7.99}
+
+Which of the following molecules have dipole moments?
+\emph{Some I had diagrams of from before}
+
+\begin{enumerate}
+
+\item $\ce{CS2}$
+
+\item $\ce{SeS2}$ - 18 valence electrons, 14 after single bonds, 2 after loading up S atoms with 3 lone pairs each.
+
+\chemfig{
+    \charge{[circle]180=\:,90=\:,-90=\:}{S}
+    - \charge{[circle]-90=\:}{Se}
+    = \charge{[circle]90=\:,-90=\:}{S}
+}
+\qquad $\longleftrightarrow$ \qquad
+\chemfig{
+    \charge{[circle]90=\:,-90=\:}{S}
+    = \charge{[circle]-90=\:}{Se}
+    - \charge{[circle]0=\:,90=\:,-90=\:}{S}
+}
+
+\item $\ce{CCl2F2}$ - 32 valence electrons, 24 after single bonds, 0 after loading up terminal atoms with 3 lone pairs each.
+
+\chemfig{
+    \charge{[circle]180=\:,90=\:,-90=\:}{F}
+    - C
+    (-[:90] \charge{[circle]180=\:,90=\:,0=\:}{Cl})
+    (-[:-90] \charge{[circle]180=\:,-90=\:,0=\:}{Cl})
+    - \charge{[circle]0=\:,90=\:,-90=\:}{F}
+}
+
+\end{enumerate}
+
+\subsubsection{Exercise 7.103}
+
+Is the $\ce{Cl2BBCl2}$ molecule polar or nonpolar?  34 valence electrons, 24 after single bonds, 0 on non-terminal atoms. \\[2ex]
+
+\ce{Cl2BBCl2}: (contains a B–B bond) \\[2ex]
+\chemfig{
+    \charge{[circle]-45:8pt=\footnotesize{0}}{B}
+    (-[:120]\charge{[circle]-45:8pt=\footnotesize{0},0=\:,90=\:,180=\:}{Cl})
+    (-[:240]\charge{[circle]-45:8pt=\footnotesize{0},0=\:,-90=\:,180=\:}{Cl})
+    - \charge{[circle]-45:8pt=\footnotesize{0}}{B}
+    (-[:60]\charge{[circle]-45:8pt=\footnotesize{0},0=\:,90=\:,180=\:}{Cl})
+    (-[:300]\charge{[circle]-45:8pt=\footnotesize{0},0=\:,-90=\:,180=\:}{Cl})
+}
+\\[3ex]
+\chemfig{
+    \charge{[circle]-45:8pt=\footnotesize{-1}}{B}
+    (-[:120]\charge{[circle]-45:8pt=\footnotesize{0},0=\:,90=\:,180=\:}{Cl})
+    (=[:240]\charge{[circle]-45:8pt=\footnotesize{+1},0=\:,180=\:}{Cl})
+    - \charge{[circle]-45:8pt=\footnotesize{-1}}{B}
+    (=[:60]\charge{[circle]-45:8pt=\footnotesize{+1},0=\:,180=\:}{Cl})
+    (-[:300]\charge{[circle]-45:8pt=\footnotesize{0},0=\:,-90=\:,180=\:}{Cl})
+}
+\qquad $\longleftrightarrow$ \qquad
+\chemfig{
+    \charge{[circle]-45:8pt=\footnotesize{-1}}{B}
+    (=[:120]\charge{[circle]-45:8pt=\footnotesize{+1},0=\:,180=\:}{Cl})
+    (-[:240]\charge{[circle]-45:8pt=\footnotesize{0},0=\:,90=\:,180=\:}{Cl})
+    - \charge{[circle]-45:8pt=\footnotesize{-1}}{B}
+    (-[:60]\charge{[circle]-45:8pt=\footnotesize{0},0=\:,-90=\:,180=\:}{Cl})
+    (=[:300]\charge{[circle]-45:8pt=\footnotesize{+1},0=\:,180=\:}{Cl})
+}
+
+
+\subsubsection{Exercise 7.105}
+Describe the molecular structure around the indicated atom or atoms:
+Electrons counts are after valence electrons minus those taken by single bonds.
+
+\begin{enumerate}
+
+\item the sulfur atom in sulfuric acid, $\ce{H2SO4 [(HO)2SO2]}$, 20 \\[2ex]
+\chemfig{
+    \charge{[circle]-45:6pt=\tiny{0}}{S}
+      (-[:90]\charge{[circle]-45:6pt=\tiny{0},0=\:,90=\:}{O}
+        -[:180]\charge{[circle]-45:6pt=\tiny{0}}{H})
+      (-[:-90]\charge{[circle]-45:6pt=\tiny{0},0=\:,-90=\:}{O}
+        -[:180]\charge{[circle]-45:6pt=\tiny{0}}{H})
+      (=[:180]\charge{[circle]-45:6pt=\tiny{0},90=\:,-90=\:}{O})
+      (=[:0]\charge{[circle]-45:6pt=\tiny{0},90=\:,-90=\:}{O})
+} \\[2ex]
+
+\item the chlorine atom in chloric acid, $\ce{HClO3 [HOClO2]}$, 18 \\[2ex]
+\chemfig{
+    \charge{[circle]-45:6pt=\tiny{-1},180=\:,90=\:,-90=\:}{O}
+    - \charge{[circle]-45:6pt=\tiny{+2},-90=\:}{Cl}
+      (-[:90]\charge{[circle]-45:6pt=\tiny{0},0=\:,90=\:}{O}
+        -[:180]\charge{[circle]-45:6pt=\tiny{0}}{H})
+    - \charge{[circle]-45:6pt=\tiny{-1},0=\:,90=\:,-90=\:}{O}
+}
+\qquad or \qquad
+\chemfig{
+    \charge{[circle]-45:6pt=\tiny{0},90=\:,-90=\:}{O}
+    = \charge{[circle]-45:6pt=\tiny{0},-90=\:}{Cl}
+    (-[:90]\charge{[circle]-45:6pt=\tiny{0},0=\:,90=\:}{O}
+    -[:180]\charge{[circle]-45:6pt=\tiny{0}}{H})
+    = \charge{[circle]-45:6pt=\tiny{0},90=\:,-90=\:}{O}
+} \\[2ex]
+
+\item the oxygen atom in hydrogen peroxide, $\ce{HOOH}$, 8 \\[2ex]
+\chemfig{
+    \charge{[circle]-45:6pt=\tiny{0}}{H}
+    - \charge{[circle]-45:6pt=\tiny{0},-90=\:}{O}
+    ~ \charge{[circle]-45:6pt=\tiny{0},-90=\:}{O}
+    - \charge{[circle]-45:6pt=\tiny{0}}{H}
+}
+\qquad NOPE \qquad
+\chemfig{
+    \charge{[circle]-45:6pt=\tiny{0}}{H}
+    - \charge{[circle]-45:6pt=\tiny{0},90=\:,-90=\:}{O}
+    - \charge{[circle]-45:6pt=\tiny{0},90=\:,-90=\:}{O}
+    - \charge{[circle]-45:6pt=\tiny{0}}{H}
+} \\[2ex]
+
+\item the nitrogen atom in nitric acid, $\ce{HNO3 [HONO2]}$, 16 \\[2ex]
+\chemfig{
+    \charge{[circle]-45:6pt=\tiny{-1},180=\:,90=\:,-90=\:}{O}
+    - \charge{[circle]-45:6pt=\tiny{+1}}{N}
+      (-[:90]\charge{[circle]-45:6pt=\tiny{0},0=\:,90=\:}{O}
+        -[:180]\charge{[circle]-45:6pt=\tiny{0}}{H})
+    = \charge{[circle]-45:6pt=\tiny{0},90=\:,-90=\:}{O}
+}
+\qquad OR MAYBE \qquad
+\chemfig{
+    \charge{[circle]-45:6pt=\tiny{-1},180=\:,90=\:,-90=\:}{O}
+    - \charge{[circle]-45:6pt=\tiny{+1}}{N}
+    (=[:90]\charge{[circle]-45:6pt=\tiny{+1},90=\:}{O}
+    -[:180]\charge{[circle]-45:6pt=\tiny{0}}{H})
+    - \charge{[circle]-45:6pt=\tiny{-1},0=\:,90=\:,-90=\:}{O}
+} \\[2ex]
+
+\item the oxygen atom in OH group in nitric acid, $\ce{HNO3 [HONO2]}$,16 \\[2ex]
+Ditto \\[2ex]
+
+\item the central oxygen atom in the ozone molecule, $\ce{O3}$, 14 \\[2ex]
+\chemfig{
+    \charge{[circle]-45:6pt=\tiny{-1},180=\:,90=\:,-90=\:}{O}
+    - \charge{[circle]-45:6pt=\tiny{+1},-90=\:}{O}
+    = \charge{[circle]-45:6pt=\tiny{0},90=\:,-90=\:}{O}
+} \\[2ex]
+
+\item each of the carbon atoms in propyne, $\ce{CH3CCH}$, 4 \\[2ex]
+\chemfig{
+    \charge{[circle]-45:6pt=\tiny{0}}{H}
+    - \charge{[circle]-45:6pt=\tiny{0}}{C}
+      (-[:90]\charge{[circle]-45:6pt=\tiny{0}}{H})
+      (-[:-90]\charge{[circle]-45:6pt=\tiny{0}}{H})
+    - \charge{[circle]-45:6pt=\tiny{0}}{C}
+    ~ \charge{[circle]-45:6pt=\tiny{0}}{C}
+    - \charge{[circle]-45:6pt=\tiny{0}}{H}
+} \\[2ex]
+
+\item the carbon atom in Freon, $\ce{CCl2F2}$, 24 \\[2ex]
+\chemfig{
+    \charge{[circle]-45:6pt=\tiny{0},180=\:,90=\:,-90=\:}{F}
+    - \charge{[circle]-45:6pt=\tiny{0}}{C}
+      (-[:90] \charge{[circle]-45:6pt=\tiny{0},180=\:,90=\:,0=\:}{Cl})
+      (-[:-90] \charge{[circle]-45:6pt=\tiny{0},180=\:,-90=\:,0=\:}{Cl})
+    - \charge{[circle]-45:6pt=\tiny{0},0=\:,90=\:,-90=\:}{F}
+} \\[2ex]
+
+\item each of the carbon atoms in allene, $\ce{H2CCCH2}$, 4  \\[2ex]
+\chemfig{
+    \charge{[circle]-45:6pt=\tiny{0}}{C}
+      (-[:90]\charge{[circle]-45:6pt=\tiny{0}}{H})
+      (-[:-90]\charge{[circle]-45:6pt=\tiny{0}}{H})
+    = \charge{[circle]-45:6pt=\tiny{0}}{C}
+    = \charge{[circle]-45:6pt=\tiny{0}}{C}
+      (-[:90]\charge{[circle]-45:6pt=\tiny{0}}{H})
+      (-[:-90]\charge{[circle]-45:6pt=\tiny{0}}{H})
+} \\[2ex]
+
+\end{enumerate}
+
+\subsubsection{Exercise 7.107}
+
+A molecule with the formula \ce{AB2}, in which A and B represent different atoms, could have one of three different shapes. Sketch and name the three different shapes that this molecule might have. Give an example of a molecule or ion for each shape.
+
+\begin{itemize}
+
+\item Linear
+\chemfig{
+    B
+    - \charge{[circle]90:7pt=\small{$180\degree$}}{A}
+    - B
+}
+
+\item Bent, at a $<120\degree $ angle
+\chemfig{
+    B
+    - \charge{[circle]-60=\:,135:11pt=\small{$< 120\degree$}}{A}
+    -[:60]B
+}
+
+\item Bent, at a $<<109\degree$ angle
+\chemfig{
+    B
+    - \charge{[circle]-14=\:,-98=\:,140:14pt=\small{$\ll 109.5\degree$}}{A}
+    -[:70.5]B
+}
+
+\end{itemize}
+
+
+\subsubsection{Exercise 7.109}
+
+Draw the Lewis electron dot structures for these molecules, including resonance structures where appropriate: \\[2ex]
+
+\begin{enumerate}
+
+\item $\ce{CS3^{2-}}$ \\[2ex]
+$\left[\,
+\chemfig{
+    \charge{[circle]-60:8pt=\tiny{0},90=\:,-90=\:}{S}
+    = \charge{[circle]-60:8pt=\tiny{0}}{C}
+      (-[:90]\charge{[circle]-60:8pt=\tiny{-1},0=\:,90=\:,180=\:}{S})
+    - \charge{[circle]-60:8pt=\tiny{-1},0=\:,90=\:,-90=\:}{S}
+}
+\enspace\right]^{2-}$
+\quad $\longleftrightarrow$ \qquad
+$\left[\enspace
+\chemfig{
+    \charge{[circle]-60:8pt=\tiny{-1},180=\:,90=\:,-90=\:}{S}
+    - \charge{[circle]-60:8pt=\tiny{0}}{C}
+    (=[:90]\charge{[circle]-60:8pt=\tiny{0},0=\:,180=\:}{S})
+    - \charge{[circle]-60:8pt=\tiny{-1},0=\:,90=\:,-90=\:}{S}
+}
+\enspace\right]^{2-}$
+\quad $\longleftrightarrow$ \qquad
+$\left[\enspace
+\chemfig{
+    \charge{[circle]-60:8pt=\tiny{-1},180=\:,90=\:,-90=\:}{S}
+    - \charge{[circle]-60:8pt=\tiny{0}}{C}
+    (-[:90]\charge{[circle]-60:8pt=\tiny{-1},0=\:,90=\:,180=\:}{S})
+    = \charge{[circle]-60:8pt=\tiny{0},90=\:,-90=\:}{S}
+}
+\enspace\right]^{2-}$
+\\[2ex]
+
+\item $\ce{CS2}$ \\[2ex]
+\chemfig{
+    \charge{[circle]-60:8pt=\tiny{0},90=\:,-90=\:}{S}
+    = \charge{[circle]-60:8pt=\tiny{0}}{C}
+    = \charge{[circle]-60:8pt=\tiny{0},90=\:,-90=\:}{S}
+}
+\\[2ex]
+
+\item $\ce{CS}$ \\[2ex]
+\chemfig{
+    \charge{[circle]-60:8pt=\tiny{-1},90=\:}{C}
+    ~ \charge{[circle]-60:8pt=\tiny{+1},90=\:}{S}
+}
+\\[2ex]
+
+\end{enumerate}
+
+\subsubsection{Exercise 7.111}
+
+Part of it is to draw chemical structure of \ce{C3H6}. \\[2ex]
+
+\chemfig{
+    \charge{[circle]-60:8pt=\tiny{0}}{H}
+    - \charge{[circle]-60:8pt=\tiny{0}}{C}
+      ( -[:90]\charge{[circle]-60:8pt=\tiny{0}}{H} )
+      ( -[:-90]\charge{[circle]-60:8pt=\tiny{0}}{H} )
+    - \charge{[circle]-60:8pt=\tiny{0}}{C}
+      ( -[:90]\charge{[circle]-60:8pt=\tiny{0}}{H} )
+    = \charge{[circle]-60:8pt=\tiny{0}}{C}
+      ( -[:90]\charge{[circle]-60:8pt=\tiny{0}}{H} )
+    - \charge{[circle]-60:8pt=\tiny{0}}{H}
+}
+
+\end{document}
