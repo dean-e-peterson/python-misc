@@ -1,0 +1,86 @@
+\documentclass[twocolumn,11pt]{article}
+%\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{chemfig}
+\usepackage{mhchem}
+\usepackage{gensymb} % For \degree at least.
+
+\title{Dean's Chemistry Chapter 8 \LaTeX\ in TeXstudio}
+\author{Dean E. Peterson}
+\date{April 16, 2026}
+\renewcommand{\labelenumi}{(\alph{enumi})}
+
+\begin{document}
+\maketitle
+
+\section{Chapter 8}
+\subsection{Chapter 8 Examples}
+\subsubsection{Example 8.2 - Solution}
+
+Ammonium sulfate is important as a fertilizer. What is the hybridization of the sulfur atom in the sulfate ion, \ce{SO4^{2-}}?
+
+32 valence electrons total, 24 after adding 4 single bonds, 0 after giving each O 3 lone pairs. \\[1ex]
+
+$\left[\enspace
+\chemfig{
+    \charge{[circle]-60:6pt=\scriptsize{+2}}{S}
+    ( -[:0]\charge{[circle]-60:6pt=\scriptsize{-1},0=\:,90=\:,-90=\:}{O} )
+    ( -[:90]\charge{[circle]-60:6pt=\scriptsize{-1},0=\:,90=\:,180=\:}{O} )
+    ( -[:180]\charge{[circle]-60:6pt=\scriptsize{-1},180=\:,90=\:,-90=\:}{O} )
+    ( -[:270]\charge{[circle]-60:6pt=\scriptsize{-1},0=\:,180=\:,-90=\:}{O} )
+}
+\enspace\right]^{2-}$
+, then maybe \\[5ex]
+$\left[\enspace
+\chemfig{
+    \charge{[circle]-60:6pt=\scriptsize{0}}{S}
+    ( =[:0]\charge{[circle]-60:6pt=\scriptsize{0},90=\:,-90=\:}{O} )
+    ( -[:90]\charge{[circle]-60:6pt=\scriptsize{-1},0=\:,90=\:,180=\:}{O} )
+    ( =[:180]\charge{[circle]-60:6pt=\scriptsize{0},90=\:,-90=\:}{O} )
+    ( -[:270]\charge{[circle]-60:6pt=\scriptsize{-1},0=\:,180=\:,-90=\:}{O} )
+}
+\enspace\right]^{2-}$
+
+
+\subsubsection{Example 8.3 - Solution}
+Urea, $\ce{NH2C(O)NH2}$, is sometimes used as a source of nitrogen in fertilizers. What is the hybridization of the carbon atom in urea?
+
+There are 24 valence electrons. 10 left after single bonds \\[2ex]
+
+\chemfig{
+    \charge{[circle]-60:6pt=\scriptsize{0},180=\:}{N}
+    ( -[:90]H)
+    ( -[:-90]H)
+    -\charge{[circle]-60:6pt=\scriptsize{0}}{C}
+    ( =[:90]\charge{[circle]-60:6pt=\scriptsize{0},0=\:,180=\:}{O} )
+    -\charge{[circle]-60:6pt=\scriptsize{0},0=\:}{N}
+    ( -[:90]H)
+    ( -[:-90]H)
+}
+
+\subsubsection{Example 8.4 - Check Your Learning}
+The long and the short of it is I want the Lewis structure(s) for \ce{NO2}.
+
+\ce{NO2} has 17 total valence electrons, 13 after single bonds, 1 after giving 3 lone pairs to each oxygen. \\[1ex]
+
+\chemfig{
+    \charge{[circle]-70:6pt=\scriptsize{+2},90=\.}{N}
+    ( -[:-150]\charge{[circle]-60:6pt=\scriptsize{-1},180=\:,-90=\:,90=\:}{O} )
+    ( -[:-30]\charge{[circle]-60:6pt=\scriptsize{-1},90=\:,-90=\:,0=\:}{O} )
+}
+\\[4ex]
+So...\\
+
+\chemfig{
+    \charge{[circle]-70:6pt=\scriptsize{+1},90=\.}{N}
+    ( =[:-150]\charge{[circle]-60:6pt=\scriptsize{0},180=\:,-90=\:}{O} )
+    ( -[:-30]\charge{[circle]-60:6pt=\scriptsize{-1},90=\:,-90=\:,0=\:}{O} )
+}
+\quad$\longleftrightarrow$\quad
+\chemfig{
+    \charge{[circle]-70:6pt=\scriptsize{+1},90=\.}{N}
+    ( -[:-150]\charge{[circle]-60:6pt=\scriptsize{-1},180=\:,-90=\:,90=\:}{O} )
+    ( =[:-30]\charge{[circle]-60:6pt=\scriptsize{0},-90=\:,0=\:}{O} )
+}
+
+\end{document}
