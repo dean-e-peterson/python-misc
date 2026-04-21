@@ -83,4 +83,99 @@ So...\\
     ( =[:-30]\charge{[circle]-60:6pt=\scriptsize{0},-90=\:,0=\:}{O} )
 }
 
+\subsubsection{Exercise 8.15}
+
+\begin{enumerate}
+
+\item circular $\ce{S8}$ molecule, 48 valence, 32 after single bonds, or 4 per S with single bonds \\[2ex]
+\chemfig{
+    \charge{[circle]180=\:,-105=\:}{S}*8 (
+    - \charge{[circle]-90=\:,-165=\:}{S}
+    - \charge{[circle]-90=\:,-15=\:}{S}
+    - \charge{[circle]0=\:,-75=\:}{S}
+    - \charge{[circle]0=\:,75=\:}{S}
+    - \charge{[circle]90=\:,15=\:}{S}
+    - \charge{[circle]90=\:,165=\:}{S}
+    - \charge{[circle]180=\:,105=\:}{S}
+    -
+    )
+}
+
+
+\item $\ce{SO2}$ molecule, 18 valence, 14 after single bonds, 2 after give each O 6.\\[2ex]
+
+Copied from exercise 7.45\\[2ex]
+\chemfig{
+    \charge{[circle]-60:6pt=\scriptsize{-1},180=\:,90=\:,-90=\:}{O}
+    -\charge{[circle]-60:6pt=\scriptsize{+1},-90=\:}{S}
+    =\charge{[circle]-60:6pt=\scriptsize{0},90=\:,-90=\:}{O}
+}
+\quad $\longleftrightarrow$ \quad
+\chemfig{
+    \charge{[circle]-60:6pt=\scriptsize{0},90=\:,-90=\:}{O}
+    =\charge{[circle]-60:6pt=\scriptsize{+1},-90=\:}{S}
+    -\charge{[circle]-60:6pt=\scriptsize{-1},0=\:,90=\:,-90=\:}{O}
+}\\[1ex]
+
+\item $\ce{SO3}$ molecule, 24 valence, 18 after single bonds, 0 after give each O 6.\\[2ex]
+\chemfig{
+    \charge{[circle]-60:6pt=\scriptsize{-1},180=\:,90=\:,-90=\:}{O}
+    - \charge{[circle]-60:6pt=\scriptsize{+2}}{S}
+    ( =[:90] \charge{[circle]-60:6pt=\scriptsize{0},180=\:,0=\:}{O})
+    - \charge{[circle]-60:6pt=\scriptsize{-1},0=\:,90=\:,-90=\:}{O}
+}
+\quad $\longleftrightarrow$ \quad \text{etc.}
+\\[3ex]
+\chemfig{
+    \charge{[circle]-60:6pt=\scriptsize{0},90=\:,-90=\:}{O}
+    = \charge{[circle]-60:6pt=\scriptsize{0}}{S}
+    ( =[:90] \charge{[circle]-60:6pt=\scriptsize{0},180=\:,0=\:}{O})
+    = \charge{[circle]-60:6pt=\scriptsize{0},90=\:,-90=\:}{O}
+}
+\\[4ex]
+\chemfig{
+    \charge{[circle]-60:6pt=\scriptsize{0},180=\:,90=\.,-90=\.}{O}
+    = \charge{[circle]-60:6pt=\scriptsize{0}}{S}
+    ( =[:90] \charge{[circle]-60:6pt=\scriptsize{0},180=\.,90=\:,0=\.}{O})
+    = \charge{[circle]-60:6pt=\scriptsize{0},0=\:,90=\.,-90=\.}{O}
+}\\[1ex]
+
+\item $\ce{H2SO4}$ molecule (the hydrogen atoms are bonded to oxygen atoms),
+32 valence, 20 after single bonds.\\[2ex]
+\chemfig{
+    \charge{[circle]-60:6pt=\scriptsize{+2}}{S}
+    (-[:180]\charge{[circle]-90=\:,180=\:,90=\:,-60:6pt=\scriptsize{-1}}{O})
+    (-[:0]\charge{[circle]-90=\:,0=\:,90=\:,-60:6pt=\scriptsize{-1}}{O})
+    (-[:90]\charge{[circle]90=\:,180=\:,-60:6pt=\scriptsize{0}}{O}
+    -[:0]\charge{[circle]-60:6pt=\scriptsize{0}}{H})
+    (-[:-90]\charge{[circle]-90=\:,180=\:,-60:6pt=\scriptsize{0}}{O}
+    -[:0]\charge{[circle]-60:6pt=\scriptsize{0}}{H})
+}
+\qquad \qquad
+\chemfig{
+    \charge{[circle]180=\:,-60:6pt=\scriptsize{+1}}{S}
+    (-[:0]\charge{[circle]-90=\:,90=\:,-60:6pt=\scriptsize{0}}{O}
+    -[:0]\charge{[circle]-90=\:,0=\:,90=\:,-60:6pt=\scriptsize{-1}}{O})
+    (-[:90]\charge{[circle]90=\:,180=\:,-60:6pt=\scriptsize{0}}{O}
+    -[:0]\charge{[circle]-60:6pt=\scriptsize{0}}{H})
+    (-[:-90]\charge{[circle]-90=\:,180=\:,-60:6pt=\scriptsize{0}}{O}
+    -[:0]\charge{[circle]-60:6pt=\scriptsize{0}}{H})
+}
+\\[4ex]
+Book answer to exercise 7.63 was like:\\[3ex]
+\chemfig{
+    \charge{[circle]-60:6pt=\scriptsize{0}}{S}
+    (=[:180]\charge{[circle]-90=\.,180=\:,90=\.,-60:6pt=\scriptsize{0}}{O})
+    (=[:0]\charge{[circle]-90=\.,0=\:,90=\.,-60:6pt=\scriptsize{0}}{O})
+    (-[:90]\charge{[circle]90=\:,180=\:,-60:6pt=\scriptsize{0}}{O}
+    -[:0]\charge{[circle]-60:6pt=\scriptsize{0}}{H})
+    (-[:-90]\charge{[circle]-90=\:,180=\:,-60:6pt=\scriptsize{0}}{O}
+    -[:0]\charge{[circle]-60:6pt=\scriptsize{0}}{H})
+}
+
+
+\end{enumerate}
+
+
+
 \end{document}
