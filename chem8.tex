@@ -1,5 +1,5 @@
-\documentclass[twocolumn,11pt]{article}
-%\documentclass[11pt]{article}
+%\documentclass[twocolumn,11pt]{article}
+\documentclass[11pt]{article}
 \usepackage[margin=1in]{geometry}
 \usepackage{chemfig}
 \usepackage{mhchem}
@@ -171,11 +171,169 @@ Book answer to exercise 7.63 was like:\\[3ex]
     -[:0]\charge{[circle]-60:6pt=\scriptsize{0}}{H})
     (-[:-90]\charge{[circle]-90=\:,180=\:,-60:6pt=\scriptsize{0}}{O}
     -[:0]\charge{[circle]-60:6pt=\scriptsize{0}}{H})
-}
-
+}\\[2ex]
 
 \end{enumerate}
 
+\subsubsection{Exercise 8.17}
+\ce{XeF2} start from 7.97 answer.\\[2ex]
 
+\chemfig{
+    \charge{[circle]-60:8pt=\scriptsize{0},180=\:,90=\:,-90=\:}{F}
+    - \charge{[circle]-60:8pt=\scriptsize{0},90=\:,-60=\:,-120=\:}{Xe}
+    - \charge{[circle]-60:8pt=\scriptsize{0},0=\:,90=\:,-90=\:}{F}
+}\\[2ex]
+
+\subsubsection{Exercise 8.19}
+
+Write Lewis structures for \ce{P4S3} and the \ce{ClO3^-} ion.
+
+\ce{P4S3} - 38 valence, 9 bonds, 20 after single bonds
+
+\ce{ClO3^-} - 26 valence, 3 bonds, 20 after single bonds\\[1ex]
+
+\textbf{\ce{P4S3}}\\[1ex]
+
+\large{Plain} \qquad\qquad\qquad \large{Formal Charges} \qquad \large{Oxidation States}\\[1ex]
+
+\chemfig{
+    \charge{[circle]-60:6pt=\scriptsize{ },180=\:}{P}?[a] * 6
+    (
+      - \charge{[circle]-60:6pt=\scriptsize{ },-90=\:}{P}?[b]
+      - \charge{[circle]-60:6pt=\scriptsize{ },0=\:}{P}?[a]
+      - \charge{[circle]-60:6pt=\scriptsize{ },0=\:,90=\:}{S}
+      - \charge{[circle]-60:6pt=\scriptsize{ },90=\:}{P}
+      ( -[-90] \charge{[circle]-60:6pt=\scriptsize{ },180=\:,0=\:}{S}?[b] )
+      - \charge{[circle]-60:6pt=\scriptsize{ },180=\:,90=\:}{S}
+      -
+    )
+}
+\qquad\qquad
+\chemfig{
+    \charge{[circle]-60:6pt=\scriptsize{0},180=\:}{P}?[a] * 6
+    (
+    - \charge{[circle]-60:6pt=\scriptsize{0},-90=\:}{P}?[b]
+    - \charge{[circle]-60:6pt=\scriptsize{0},0=\:}{P}?[a]
+    - \charge{[circle]-60:6pt=\scriptsize{0},0=\:,90=\:}{S}
+    - \charge{[circle]-60:6pt=\scriptsize{0},90=\:}{P}
+    ( -[-90] \charge{[circle]-60:6pt=\scriptsize{0},180=\:,0=\:}{S}?[b] )
+    - \charge{[circle]-60:6pt=\scriptsize{0},180=\:,90=\:}{S}
+    -
+    )
+}
+\qquad\qquad
+\chemfig{
+    \charge{[circle]-60:6pt=\scriptsize{0},180=\:}{P}?[a] * 6
+    (
+    - \charge{[circle]-60:6pt=\scriptsize{0},-90=\:}{P}?[b]
+    - \charge{[circle]-60:6pt=\scriptsize{0},0=\:}{P}?[a]
+    - \charge{[circle]-60:6pt=\scriptsize{0},0=\:,90=\:}{S}
+    - \charge{[circle]-60:6pt=\scriptsize{0},90=\:}{P}
+    ( -[-90] \charge{[circle]-60:6pt=\scriptsize{0},180=\:,0=\:}{S}?[b] )
+    - \charge{[circle]-60:6pt=\scriptsize{0},180=\:,90=\:}{S}
+    -
+    )
+}\\[2ex]
+
+\textbf{\ce{ClO3^-}}\\[1ex]
+
+\large{Plain} \qquad\qquad\qquad \large{Formal Charges} \qquad \large{Oxidation States}\\[1ex]
+
+$\left[\enspace
+\chemfig{
+    \charge{[circle]-60:6pt=\scriptsize{ },180=\:}{Cl}
+    ( -[90] \charge{[circle]-60:6pt=\scriptsize{ },180=\:,90=\:,0=\:}{O} )
+    ( - \charge{[circle]-60:6pt=\scriptsize{ },-90=\:,90=\:,0=\:}{O} )
+    ( -[-90] \charge{[circle]-60:6pt=\scriptsize{ },180=\:,-90=\:,0=\:}{O} )
+}
+\enspace\right]^-$
+\qquad
+$\left[\enspace
+\chemfig{
+    \charge{[circle]-60:6pt=\scriptsize{+2},180=\:}{Cl}
+    ( -[90] \charge{[circle]-60:6pt=\scriptsize{-1},180=\:,90=\:,0=\:}{O} )
+    ( - \charge{[circle]-60:6pt=\scriptsize{-1},-90=\:,90=\:,0=\:}{O} )
+    ( -[-90] \charge{[circle]-60:6pt=\scriptsize{-1},180=\:,-90=\:,0=\:}{O} )
+}
+\enspace\right]^-$
+\qquad
+$\left[\enspace
+\chemfig{
+    \charge{[circle]-60:6pt=\scriptsize{+5},180=\:}{Cl}
+    ( -[90] \charge{[circle]-60:6pt=\scriptsize{-2},180=\:,90=\:,0=\:}{O} )
+    ( - \charge{[circle]-60:6pt=\scriptsize{-2},-90=\:,90=\:,0=\:}{O} )
+    ( -[-90] \charge{[circle]-60:6pt=\scriptsize{-2},180=\:,-90=\:,0=\:}{O} )
+}
+\enspace\right]^-$
+\qquad
+\\[2ex]
+
+$\left[\enspace
+\chemfig{
+    \charge{[circle]-60:6pt=\scriptsize{ },180=\:}{Cl}
+    ( =[90] \charge{[circle]-60:6pt=\scriptsize{ },180=\:,0=\:}{O} )
+    ( - \charge{[circle]-60:6pt=\scriptsize{ },-90=\:,90=\:,0=\:}{O} )
+    ( =[-90] \charge{[circle]-60:6pt=\scriptsize{ },180=\:,0=\:}{O} )
+}
+\enspace\right]^-$
+\qquad
+$\left[\enspace
+\chemfig{
+    \charge{[circle]-60:6pt=\scriptsize{0},180=\:}{Cl}
+    ( =[90] \charge{[circle]-60:6pt=\scriptsize{0},180=\:,0=\:}{O} )
+    ( - \charge{[circle]-60:6pt=\scriptsize{-1},-90=\:,90=\:,0=\:}{O} )
+    ( =[-90] \charge{[circle]-60:6pt=\scriptsize{0},180=\:,0=\:}{O} )
+}
+\enspace\right]^-$
+\qquad
+$\left[\enspace
+\chemfig{
+    \charge{[circle]-60:6pt=\scriptsize{+2},180=\:}{Cl}
+    ( =[90] \charge{[circle]-60:6pt=\scriptsize{-1},180=\:,0=\:}{O} )
+    ( - \charge{[circle]-60:6pt=\scriptsize{-1},-90=\:,90=\:,0=\:}{O} )
+    ( =[-90] \charge{[circle]-60:6pt=\scriptsize{-1},180=\:,0=\:}{O} )
+}
+\enspace\right]^-$
+\qquad
+\\[2ex]
+
+\subsubsection{Exercise 8.21}
+    Write Lewis structures for $\ce{NF3}$ and $\ce{PF5}$. On the basis of hybrid orbitals, explain the fact that $\ce{NF3}$, $\ce{PF3}$, and $\ce{PF5}$ are stable molecules, but $\ce{NF5}$ does not exist. \\[1ex]
+
+\textbf{\ce{NF3}} - 26 valence, 20 after single, 2 after 6 each F.\\[2ex]
+\chemfig{
+    \charge{[circle]-60:6pt=\scriptsize{0},180=\:}{N}
+    ( -[:90]\charge{[circle]-60:6pt=\scriptsize{0},0=\:,90=\:,180=\:}{F} )
+    ( -[:0]\charge{[circle]-60:6pt=\scriptsize{0},0=\:,90=\:,-90=\:}{F} )
+    ( -[:-90]\charge{[circle]-60:6pt=\scriptsize{0},0=\:,-90=\:,180=\:}{F} )
+}\\[3ex]
+
+\textbf{\ce{PF5}} - 40 valence, 30 after single, 0 after 6 each F.\\[2ex]
+\chemfig{
+    \charge{[circle]342:6pt=\scriptsize{0}}{P}
+    ( -[:90]\charge{[circle]-60:6pt=\scriptsize{0},0=\:,90=\:,180=\:}{F} )
+    ( -[:162]\charge{[circle]-60:6pt=\scriptsize{0},-90=\:,90=\:,180=\:}{F} )
+    ( -[:234]\charge{[circle]-60:6pt=\scriptsize{0},0=\:,-90=\:,180=\:}{F} )
+    ( -[:306]\charge{[circle]-60:6pt=\scriptsize{0},0=\:,-90=\:,180=\:}{F} )
+    ( -[:18]\charge{[circle]-60:6pt=\scriptsize{0},0=\:,90=\:,-90=\:}{F} )
+}\\[3ex]
+
+
+\subsubsection{Exercise 8.25}
+    Write the Lewis structure for acetonitrile, \ce{H3CCN}, and indicate the direction of the dipole moment in the molecule.
+
+    Valence 16, 6 after singles.\\[2ex]
+$\overset{+\longrightarrow}
+{
+\chemfig{
+    \charge{[circle]-60:6pt=\scriptsize{0}}{C}
+    ( -[:90]\charge{[circle]-60:6pt=\scriptsize{0}}{H} )
+    ( -[:180]\charge{[circle]-60:6pt=\scriptsize{0}}{H} )
+    ( -[:-90]\charge{[circle]-60:6pt=\scriptsize{0}}{H} )
+    - \charge{[circle]-60:6pt=\scriptsize{0}}{C}
+    ~ \charge{[circle]-60:6pt=\scriptsize{0},0=\:}{N}
+}
+}$
+\\[2ex]
 
 \end{document}
