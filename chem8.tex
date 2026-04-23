@@ -4,6 +4,7 @@
 \usepackage{chemfig}
 \usepackage{mhchem}
 \usepackage{gensymb} % For \degree at least.
+\usepackage{hyperref} % For hyperlinks.
 
 \title{Dean's Chemistry Chapter 8 \LaTeX\ in TeXstudio}
 \author{Dean E. Peterson}
@@ -335,5 +336,75 @@ $\overset{+\longrightarrow}
 }
 }$
 \\[2ex]
+
+\subsubsection{Exercise 8.29}
+
+\begin{enumerate}
+
+\item ozone ($\ce{O3}$) (borrow from 7.55)\\[2ex]
+\chemfig{
+    \charge{[circle]-90:8pt=\scriptsize{0},180=\:,90=\:}{O}
+    =[:-45]\charge{[circle]-90:8pt=\scriptsize{+1},-90=\:}{O}
+    -[:45]\charge{[circle]-90:8pt=\scriptsize{-1},90=\:,0=\:,270=\:}{O}
+}
+\qquad $\longleftrightarrow$ \qquad
+\chemfig{
+    \charge{[circle]-90:8pt=\scriptsize{-1},90=\:,180=\:,270=\:}{O}
+    -[:-45]\charge{[circle]-90:8pt=\scriptsize{+1},-90=\:}{O}
+    =[:45]\charge{[circle]-90:8pt=\scriptsize{0},0=\:,90=\:}{O}
+} \\[2ex]
+
+\item carbon dioxide ($\ce{CO2}$) (borrow from somewhere)\\[2ex]
+\chemfig{
+    \charge{[circle]-60:6pt=\scriptsize{0},90=\:,-90=\:}{O}
+    =\charge{[circle]-60:6pt=\scriptsize{0}}{C}
+    =\charge{[circle]-60:6pt=\scriptsize{0},90=\:,-90=\:}{O}
+}\\[2ex]
+
+\item nitrogen dioxide ($\ce{NO2}$) (borrow from example 8.4)\\[2ex]
+\chemfig{
+    \charge{[circle]-70:6pt=\scriptsize{+1},90=\.}{N}
+    ( =[:-150]\charge{[circle]-60:6pt=\scriptsize{0},180=\:,-90=\:}{O} )
+    ( -[:-30]\charge{[circle]-60:6pt=\scriptsize{-1},90=\:,-90=\:,0=\:}{O} )
+}
+\quad$\longleftrightarrow$\quad
+\chemfig{
+    \charge{[circle]-70:6pt=\scriptsize{+1},90=\.}{N}
+    ( -[:-150]\charge{[circle]-60:6pt=\scriptsize{-1},180=\:,-90=\:,90=\:}{O} )
+    ( =[:-30]\charge{[circle]-60:6pt=\scriptsize{0},-90=\:,0=\:}{O} )
+}\\[3ex]
+Wait, wouldn't it just be...\\[2ex]
+\chemfig{
+    \charge{[circle]-70:6pt=\scriptsize{0},90=\.}{N}
+    ( =[:-150]\charge{[circle]-60:6pt=\scriptsize{0},180=\:,-90=\:}{O} )
+    ( =[:-30]\charge{[circle]-60:6pt=\scriptsize{0},-90=\:,0=\:}{O} )
+}\\[3ex]
+Hmm  \href{https://chemistry.stackexchange.com/questions/9448/structure-of-no2-compound}{this link} seems to indicate that a possible answer is:\\[3ex]
+\chemfig{
+    \charge{[circle]-70:6pt=\scriptsize{0},90=\:}{N}
+    ( =[:-150]\charge{[circle]-60:6pt=\scriptsize{0},180=\:,-90=\:}{O} )
+    ( -[:-30]\charge{[circle]-60:6pt=\scriptsize{0},90=\:,-90=\:,0=\.}{O} )
+}
+\quad$\longleftrightarrow$\quad
+\chemfig{
+    \charge{[circle]-70:6pt=\scriptsize{0},90=\:}{N}
+    ( -[:-150]\charge{[circle]-60:6pt=\scriptsize{0},180=\.,-90=\:,90=\:}{O} )
+    ( =[:-30]\charge{[circle]-60:6pt=\scriptsize{0},-90=\:,0=\:}{O} )
+}\\[3ex]
+
+\item phosphate ion ($\ce{PO4^{3-}}$) (borrow from 7.54)\\[2ex]
+$\left[\enspace
+\chemfig{
+    \charge{[circle]-45:6pt=\scriptsize{0}}{P}
+    (=[:0]\charge{[circle]-60:6pt=\scriptsize{0},90=\:,270=\:}{O})
+    (-[:90]\charge{[circle]-60:6pt=\scriptsize{-1},90=\:,0=\:,180=\:}{O})
+    (-[:180]\charge{[circle]-60:6pt=\scriptsize{-1},90=\:,180=\:,270=\:}{O})
+    (-[:270]\charge{[circle]-60:6pt=\scriptsize{-1},180=\:,0=\:,270=\:}{O})
+}
+\enspace\right]^{3-}$
+$\longleftrightarrow$ \quad \text{other resonant forms}
+
+\end{enumerate}
+
 
 \end{document}
