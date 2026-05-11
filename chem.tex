@@ -1120,6 +1120,31 @@ Electrons counts are after valence electrons minus those taken by single bonds.
     - \charge{[circle]-45:6pt=\tiny{-1},0=\:,90=\:,-90=\:}{O}
 } \\[2ex]
 
+Try a little different layout. \\[2ex]
+\chemfig{
+    \charge{[circle]-45:6pt=\tiny{-1},180=\:,90=\:,-90=\:}{O}
+    - \charge{[circle]-45:6pt=\tiny{+1}}{N}
+    (-[:90]\charge{[circle]-45:6pt=\tiny{0},180=\:,0=\:}{O}
+    -[:90]\charge{[circle]-45:6pt=\tiny{0}}{H})
+    = \charge{[circle]-45:6pt=\tiny{0},90=\:,-90=\:}{O}
+}
+\qquad $\longleftrightarrow$ \quad
+\chemfig{
+    \charge{[circle]-45:6pt=\tiny{-1},90=\:,-90=\:}{O}
+    = \charge{[circle]-45:6pt=\tiny{+1}}{N}
+    (-[:90]\charge{[circle]-45:6pt=\tiny{0},180=\:,0=\:}{O}
+    -[:90]\charge{[circle]-45:6pt=\tiny{0}}{H})
+    - \charge{[circle]-45:6pt=\tiny{0},90=\:,0=\:,-90=\:}{O}
+}
+\qquad OR MAYBE \qquad
+\chemfig{
+    \charge{[circle]-45:6pt=\tiny{-1},180=\:,90=\:,-90=\:}{O}
+    - \charge{[circle]-45:6pt=\tiny{+1}}{N}
+    (=[:90]\charge{[circle]-45:6pt=\tiny{+1},180=\:}{O}
+    -[:90]\charge{[circle]-45:6pt=\tiny{0}}{H})
+    - \charge{[circle]-45:6pt=\tiny{-1},0=\:,90=\:,-90=\:}{O}
+} \\[2ex]
+
 \item the oxygen atom in OH group in nitric acid, $\ce{HNO3 [HONO2]}$,16 \\[2ex]
 Ditto \\[2ex]
 

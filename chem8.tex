@@ -139,7 +139,24 @@ Copied from exercise 7.45\\[2ex]
     = \charge{[circle]-60:6pt=\scriptsize{0}}{S}
     ( =[:90] \charge{[circle]-60:6pt=\scriptsize{0},180=\.,90=\:,0=\.}{O})
     = \charge{[circle]-60:6pt=\scriptsize{0},0=\:,90=\.,-90=\.}{O}
-}\\[1ex]
+}\\[4ex]
+Or, to more closely match the book solution layouts but with formal charges.\\[2ex]
+\chemfig{
+    \charge{[circle]-60:6pt=\scriptsize{+2}}{S}
+    ( -[:90] \charge{[circle]-60:6pt=\scriptsize{-1},180=\:,90=\:,0=\:}{O})
+    ( =[:0] \charge{[circle]-60:6pt=\scriptsize{0},90=\:,0=\:}{O})
+    ( -[:-90] \charge{[circle]-60:6pt=\scriptsize{-1},0=\:,180=\:,-90=\:}{O})
+}
+\quad $\longleftrightarrow$ \quad \text{etc.}
+\\[4ex]
+...but why not...\\[2ex]
+\chemfig{
+    \charge{[circle]-60:6pt=\scriptsize{0}}{S}
+    ( =[:90] \charge{[circle]-60:6pt=\scriptsize{0},180=\:,0=\:}{O})
+    ( =[:0] \charge{[circle]-60:6pt=\scriptsize{0},90=\:,0=\:}{O})
+    ( =[:-90] \charge{[circle]-60:6pt=\scriptsize{0},0=\:,180=\:}{O})
+}
+\\[4ex]
 
 \item $\ce{H2SO4}$ molecule (the hydrogen atoms are bonded to oxygen atoms),
 32 valence, 20 after single bonds.\\[2ex]
@@ -172,7 +189,30 @@ Book answer to exercise 7.63 was like:\\[3ex]
     -[:0]\charge{[circle]-60:6pt=\scriptsize{0}}{H})
     (-[:-90]\charge{[circle]-90=\:,180=\:,-60:6pt=\scriptsize{0}}{O}
     -[:0]\charge{[circle]-60:6pt=\scriptsize{0}}{H})
-}\\[2ex]
+}\\[4ex]
+
+Or, to format things more like the book answer, why is it not this...\\[2ex]
+\chemfig{
+    \charge{[circle]-60:6pt=\scriptsize{0}}{H}
+    - \charge{[circle]-90=\:,90=\:,-60:6pt=\scriptsize{0}}{O}
+    - \charge{[circle]-60:6pt=\scriptsize{+2}}{S}
+    ( -[:90] \charge{[circle]180=\:,90=\:,0=\:,-60:6pt=\scriptsize{-1}}{O})
+    ( -[:-90] \charge{[circle]180=\:,-90=\:,0=\:,-60:6pt=\scriptsize{-1}}{O})
+    - \charge{[circle]-90=\:,90=\:,-60:6pt=\scriptsize{0}}{O}
+    - \charge{[circle]-60:6pt=\scriptsize{0}}{H}
+} \\[3ex]
+
+... but instead is this ... \\[2ex]
+
+\chemfig{
+    \charge{[circle]-60:6pt=\scriptsize{0}}{H}
+    - \charge{[circle]-90=\:,90=\:,-60:6pt=\scriptsize{0}}{O}
+    - \charge{[circle]-60:6pt=\scriptsize{0}}{S}
+    ( =[:90] \charge{[circle]180=\:,0=\:,-60:6pt=\scriptsize{0}}{O})
+    ( =[:-90] \charge{[circle]180=\:,0=\:,-60:6pt=\scriptsize{0}}{O})
+    - \charge{[circle]-90=\:,90=\:,-60:6pt=\scriptsize{0}}{O}
+    - \charge{[circle]-60:6pt=\scriptsize{0}}{H}
+} \\[3ex]
 
 \end{enumerate}
 
@@ -266,7 +306,6 @@ $\left[\enspace
     ( -[-90] \charge{[circle]-60:6pt=\scriptsize{-2},180=\:,-90=\:,0=\:}{O} )
 }
 \enspace\right]^-$
-\qquad
 \\[2ex]
 
 $\left[\enspace
@@ -295,8 +334,27 @@ $\left[\enspace
     ( =[-90] \charge{[circle]-60:6pt=\scriptsize{-1},180=\:,0=\:}{O} )
 }
 \enspace\right]^-$
-\qquad
 \\[2ex]
+
+% Add formatting more like book answer.
+$\left[\enspace
+\chemfig{
+    \charge{[circle]-60:6pt=\scriptsize{ },150=\:}{Cl}
+    ( =[:210] \charge{[circle]-60:6pt=\scriptsize{ },180=\:,270=\:}{O} )
+    ( -[:90] \charge{[circle]-60:6pt=\scriptsize{ },180=\:,90=\:,0=\:}{O} )
+    ( =[:330] \charge{[circle]-60:6pt=\scriptsize{ },270=\:,0=\:}{O} )
+}
+\enspace\right]^-$
+\qquad
+$\left[\enspace
+\chemfig{
+    \charge{[circle]-60:6pt=\scriptsize{ },150=\:}{Cl}
+    ( =[:210] \charge{[circle]-60:6pt=\scriptsize{ },180=\:,270=\:}{O} )
+    ( -[:90] \charge{[circle]30:6pt=--,180=\:,90=\:,0=\:}{O} )
+    ( =[:330] \charge{[circle]-60:6pt=\scriptsize{ },270=\:,0=\:}{O} )
+}
+\enspace\right]^-$
+\qquad
 
 \subsubsection{Exercise 8.21}
     Write Lewis structures for $\ce{NF3}$ and $\ce{PF5}$. On the basis of hybrid orbitals, explain the fact that $\ce{NF3}$, $\ce{PF3}$, and $\ce{PF5}$ are stable molecules, but $\ce{NF5}$ does not exist. \\[1ex]
